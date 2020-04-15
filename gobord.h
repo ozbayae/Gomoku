@@ -10,11 +10,15 @@ class gobord {
   private:
     bordvakje* ingang;
     int hoogte, breedte;
+    bordvakje* maakrij();
+    void ritsen(bordvakje* boven, bordvakje* onder);
+    void drukafburen(bordvakje*);
     // TODO
   public:
     gobord ( );
     gobord (int hoogte, int breedte);
     ~gobord ( );
     void drukaf ( );
+    void maakbord ( );
     // TODO
 };//gobord
